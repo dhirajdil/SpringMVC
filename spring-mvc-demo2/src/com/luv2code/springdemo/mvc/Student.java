@@ -1,9 +1,13 @@
 package com.luv2code.springdemo.mvc;
 
+import java.util.*;
+
 public class Student {
 	private String firstname;
 	private String lastname;
 	private String country;
+	private LinkedHashMap<String,String> countryOption;
+	private String favoriteLanguage;
 	
 	public String getCountry() {
 		return country;
@@ -14,11 +18,20 @@ public class Student {
 	}
 
 	Student(){
-		
+		countryOption=new LinkedHashMap<String, String>();
+		countryOption.put("BR","Brazil");
+		countryOption.put("FR","France");
+		countryOption.put("DE","Germany");
+		countryOption.put("IN","India");
+		countryOption.put("US","Uited State of America");
 	}
 
 	public String getFirstname() {
 		return firstname;
+	}
+
+	public LinkedHashMap<String, String> getCountryOption() {
+		return countryOption;
 	}
 
 	public void setFirstname(String firstname) {
@@ -31,6 +44,14 @@ public class Student {
 
 	public void setLastname(String lastname) {
 		this.lastname = lastname;
+	}
+
+	public String getFavoriteLanguage() {
+		return favoriteLanguage;
+	}
+
+	public void setFavoriteLanguage(String favoriteLanguage) {
+		this.favoriteLanguage = favoriteLanguage;
 	}
 
 }

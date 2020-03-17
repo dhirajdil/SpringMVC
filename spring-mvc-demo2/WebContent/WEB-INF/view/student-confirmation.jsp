@@ -4,6 +4,7 @@
 <body>
 Student Name:${student.firstname}${student.lastname}
 Country:${student.country} 
+Fevority Language:${student.favoriteLanguage}
 </form>
 </body>
 </html>
