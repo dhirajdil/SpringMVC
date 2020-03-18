@@ -23,7 +23,13 @@ Country:
    C# <form:radiobutton path="favoriteLanguage" value="C#"/>
    PHP <form:radiobutton path="favoriteLanguage" value="PHP"/>
    Ruby <form:radiobutton path="favoriteLanguage" value="Ruby"/>
- 
+   
+   <br><br>
+	Operating System:
+	Linux <form:checkbox path="operatingSystems" value="Linux"/>
+ 	Mac OS <form:checkbox path="operatingSystems" value="Mac Os"/>
+ 	MS Windows <form:checkbox path="operatingSystems" value="MS Windows"/>
+ 	
 <input type="submit" value="submit"/>
 </form:form>
 </body>
