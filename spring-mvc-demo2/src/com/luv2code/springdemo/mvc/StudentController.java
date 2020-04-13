@@ -1,7 +1,10 @@
 package com.luv2code.springdemo.mvc;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -20,7 +23,7 @@ public class StudentController {
 	}
 	
 	@RequestMapping("/processForm")
-	public String processFrom(@ModelAttribute("student") Student stu,Model model) {
+	public String processFrom( @ModelAttribute("student") Student stu,BindingResult theBindingResult,Model model) {
 		
 		String fname=stu.getFirstname();
 		String lname=stu.getLastname();

@@ -2,9 +2,18 @@ package com.luv2code.springdemo.mvc;
 
 import java.util.*;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Student {
+	@NotNull(message="is required")
+	@Size(min=1)
 	private String firstname;
+	@NotNull(message="is required")
+	@Size(min=1)
 	private String lastname;
+	@NotNull(message="is required")
+	@Size(min=1)
 	private String country;
 	private LinkedHashMap<String,String> countryOption;
 	private String favoriteLanguage;
